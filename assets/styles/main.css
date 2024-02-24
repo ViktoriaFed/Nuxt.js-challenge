@@ -1,0 +1,24 @@
+#navbar {
+    background-color: #7161ef;
+    height: 6rem;
+    color: #fff;
+}
+#add-btn {
+    color: #fff;
+    background-color: #7161ef;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+#name{
+    font-size: 1.2rem;
+}
+
+#rating {
+    margin-left: 0.5rem;
+}
+
+#heading {
+    border-bottom: solid 1px #7161ef;
+    width: 30%;
+}

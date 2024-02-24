@@ -1,10 +1,20 @@
 <template>
     <div>
         <header>
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar navbar-expand fs-4" id="navbar">
             <div class="container-fluid">
-                <NuxtLink to="/" class="navbar-brand">Homepage</NuxtLink> 
-                <NuxtLink to="/experience" class="navbar-brand">Experience</NuxtLink>
+                <NuxtLink to="/" class="navbar-brand">Nuxt.js</NuxtLink> 
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav" style="color: #fff;">
+                        <li class="navbar-item">
+                            <NuxtLink to="/" class="nav-link">Homepage</NuxtLink>
+                        </li>
+                        <li class="navbar-item">
+                            <NuxtLink to="/experience" class="nav-link">Experience</NuxtLink>
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
         </nav>
     </header>
@@ -19,7 +29,7 @@
 </template>
 
 <script setup>
-
+    
     const loadBootstrapScript = () => {
     const script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js';
@@ -37,7 +47,7 @@
 
 <style scoped>
 .router-link-exact-active{
-    color: blueviolet;
+    color: #fff;
 }
 </style>
 
