@@ -1,5 +1,5 @@
 <template>
-    <div class="container mt-5">
+    <div class="container mt-5 pt-2 mb-4 pb-2">
       <div class="row">
 
         <div class="col-lg-9 fs-5">
@@ -19,15 +19,15 @@
               <form @submit.prevent="handleSubmit">
                 <div class="mb-3">
                   <label for="service-name" class="form-label">Service name</label>
-                  <input v-model="newserviceName" type="text" class="form-control">
+                  <input v-model="newserviceName" type="text" class="form-control" placeholder="e.g. Pizza delivery">
                 </div>
                 <div class="mb-3">
                   <label for="business-name" class="form-label">Business name</label>
-                  <input v-model="newbusinessName" type="text" class="form-control">
+                  <input v-model="newbusinessName" type="text" class="form-control" placeholder="e.g. PizzaPizza">
                 </div>
                 <div class="mb-3">
                   <label for="service-rating" class="form-label">Service rating</label>
-                  <input v-model="newrating" type="text" class="form-control">
+                  <input v-model="newrating" type="text" class="form-control" placeholder="e.g. 3.8">
                 </div>
                 <button type="submit" class="btn"  id="add-btn">Add</button>
               </form>
@@ -40,7 +40,7 @@
 
 <script setup>
 
-    import { ref } from 'vue';
+    import { ref } from 'vue'; //??
     import { useCardsStore } from '~/store/cards';
 
     const cardsStore = useCardsStore();
@@ -65,3 +65,11 @@
     };
     
 </script>
+
+<style>
+  @media (max-width: 767px) {
+      .col-lg-3 {
+        order: -1; 
+      }
+    }
+</style>

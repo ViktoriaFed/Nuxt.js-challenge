@@ -15,7 +15,12 @@
 
                         <p class="card-text" id="rating">{{ card.rating }}</p>
                     </div>
-                        
+                    <div class="btns d-flex mt-2 text-center justify-content-center">
+                        <NuxtLink to="/" class="btn m-2" id="redirect">To the provider</NuxtLink> 
+                        <NuxtLink to="/" class="btn m-2" id="details">Details</NuxtLink> 
+                     
+                    </div>
+                    
                 </div>
     </div>
 </template>

@@ -1,8 +1,15 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 #navbar {
     background-color: #7161ef;
     height: 6rem;
     color: #fff;
 }
+
 #add-btn {
     color: #fff;
     background-color: #7161ef;
@@ -21,4 +28,41 @@
 #heading {
     border-bottom: solid 1px #7161ef;
     width: 30%;
+}
+
+#redirect {
+    background-color: #7161ef;
+    color: #fff;
+}
+
+#redirect:hover {
+    background-color: #fff;
+    color: #7161ef;
+    border: solid 1px #7161ef;
+}
+
+#details {
+    border: solid 1px #7161ef;
+    color: #7161ef;
+}
+
+#details:hover {
+    background-color: #7161ef;
+    color: #fff;
+}
+
+section {
+    max-width: 80%;
+    margin: 3rem auto;
+    padding: 1.25rem;
+    border-radius: 8px;
+    font-size: 1.2rem;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+input[type=text]:focus {
+  border-color: #7161ef;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(226, 163, 235, 0.945);
+  outline: 0 none;
 }

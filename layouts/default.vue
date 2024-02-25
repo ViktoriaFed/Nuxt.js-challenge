@@ -3,11 +3,11 @@
         <header>
         <nav class="navbar navbar-expand fs-4" id="navbar">
             <div class="container-fluid">
-                <NuxtLink to="/" class="navbar-brand">Nuxt.js</NuxtLink> 
+                <NuxtLink to="/" class="navbar-brand fw-bold ms-2">Nuxt.js</NuxtLink> 
                 <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav" style="color: #fff;">
-                        <li class="navbar-item">
-                            <NuxtLink to="/" class="nav-link">Homepage</NuxtLink>
+                    <ul class="navbar-nav" id="navlinks" style="color: #fff;">
+                        <li class="navbar-item ms-2">
+                            <NuxtLink to="/" class="nav-link ms-2">Homepage</NuxtLink>
                         </li>
                         <li class="navbar-item">
                             <NuxtLink to="/experience" class="nav-link">Experience</NuxtLink>
